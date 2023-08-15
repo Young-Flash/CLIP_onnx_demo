@@ -1,7 +1,7 @@
 import onnxruntime as ort
 from PIL import Image
 import numpy as np
-import clip
+import cn_clip.clip as clip
 
 
 def test_encode_text(model_quant: str, text: list) -> np.ndarray:

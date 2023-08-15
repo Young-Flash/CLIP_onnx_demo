@@ -10,5 +10,5 @@ def get_image_encoder_onnx(model, preprocess):
     vit = model.visual
     vit.eval()
 
-    onnx_filename = "clip-image-encoder.onnx"
+    onnx_filename = "clip-cn-image-encoder.onnx"
     torch.onnx.export(vit, input_tensor, onnx_filename)

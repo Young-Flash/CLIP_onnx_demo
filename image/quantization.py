@@ -5,20 +5,11 @@ import onnxruntime as ort
 from PIL import Image
 from onnxruntime.quantization import quantize_dynamic, QuantType, quant_pre_process
 
-from torchvision.transforms import (
-    Compose,
-    Resize,
-    CenterCrop,
-    ToTensor,
-    Normalize,
-    InterpolationMode,
-)
-
 
 def image_quantize():
-    model_fp32 = "clip-image-encoder.onnx"
-    model_prep = "clip-image-encoder-quant-pre.onnx"
-    model_quant = "clip-image-encoder-quant-int8.onnx"
+    model_fp32 = "clip-cn-image-encoder.onnx"
+    model_prep = "clip-cn-image-encoder-quant-pre.onnx"
+    model_quant = "clip-cn-image-encoder-quant-int8.onnx"
 
     cur_path = Path(os.curdir)
 
