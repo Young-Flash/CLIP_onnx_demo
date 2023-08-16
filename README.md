@@ -1,5 +1,5 @@
 This demo(based on @greyovo's [jupyter notebook](https://colab.research.google.com/drive/1bW1aMg0er1T4aOcU5pCNYVgmVzBJ4-x4#scrollTo=hPscj2wlZlHb)) show the inference result for the same text(Chinese & English) and image input with different model, including the [Chinese-CLIP](https://github.com/OFA-Sys/Chinese-CLIP/tree/master) and the onnx quantized model. Test result on my local machine is as follows:
-| model |   | result |
+| model | language | result |
 |---|---|---|
 | [Chinese-CLIP](https://github.com/OFA-Sys/Chinese-CLIP/tree/master) | Chinese | [[1.9532440e-03 9.9525285e-01 2.2442457e-03 5.4962368e-04]] |
 | [Chinese-CLIP](https://github.com/OFA-Sys/Chinese-CLIP/tree/master) | English | [[2.5376787e-03 9.9683857e-01 4.3544930e-04 1.8830669e-04]] |

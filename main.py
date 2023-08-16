@@ -15,15 +15,15 @@ from torch import nn
 device = "cpu"
 model, preprocess = clip.load_from_name("ViT-B-16", device=device)
 
-# get_image_encoder_onnx(model, preprocess)
-# image_quantize()
+get_image_encoder_onnx(model, preprocess)
+image_quantize()
 # res_image = test_encode_image("clip-cn-image-encoder.onnx", "image.jpg", preprocess)
 res_image = test_encode_image(
     "clip-cn-image-encoder-quant-int8.onnx", "image.jpg", preprocess
 )
 
-# get_text_encoder_onnx_cn(model)
-# text_quantize()
+get_text_encoder_onnx_cn(model)
+text_quantize()
 # res_text = test_encode_text(
 #     "clip-cn-text-encoder.onnx",
 #     ["a tiger", "a cat", "a dog", "a bear"]
